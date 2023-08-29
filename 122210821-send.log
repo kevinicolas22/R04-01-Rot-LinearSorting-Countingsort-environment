@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-08-29T10:54:21.070-0300</date>
+  <logger>KEVIN NICOLAS DA SILVA SANTOS</logger>
+  <level>FINE</level>
+  <message>File 122210821-KEVIN NICOLAS DA SILVA SANTOS.zip was received. It was sent by KEVIN NICOLAS DA SILVA SANTOS from IP 150.165.42.205 at 29-08-2023 10*54*21</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-08-29T11:00:14.748-0300</date>
+  <logger>KEVIN NICOLAS DA SILVA SANTOS</logger>
+  <level>FINE</level>
+  <message>File 122210821-KEVIN NICOLAS DA SILVA SANTOS.zip was received. It was sent by KEVIN NICOLAS DA SILVA SANTOS from IP 150.165.42.205 at 29-08-2023 11*00*14</message>
+</record>

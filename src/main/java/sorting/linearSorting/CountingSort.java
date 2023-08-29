@@ -17,8 +17,35 @@ public class CountingSort extends AbstractSorting<Integer> {
 
 	@Override
 	public void sort(Integer[] array, int leftIndex, int rightIndex) {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Not implemented yet!");
-	}
+		
+        if (array == null || array.length <= 1 || leftIndex >= rightIndex) {
+            return;
+        }
 
+        // Encontra o maior elemento no array
+        int max = array[leftIndex];
+        for (int i = leftIndex + 1; i <= rightIndex; i++) {
+            if (array[i] > max) {
+                max = array[i];
+            }
+        }
+
+        // Cria um array de contagem para armazenar a contagem de cada elemento
+        int[] countArray = new int[max + 1];
+
+        // Conta a ocorrência de cada elemento no array original
+        for (int i = leftIndex; i <= rightIndex; i++) {
+            countArray[array[i]]++;
+        }
+
+        // Atualiza o array original com os elementos ordenados
+        int outputIndex = leftIndex;
+        for (int i = 0; i < countArray.length; i++) {
+            while (countArray[i] > 0) {
+                array[outputIndex] = i;
+                outputIndex++;
+                countArray[i]--;
+            }
+        }
+    }
 }
